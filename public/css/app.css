@@ -5,22 +5,30 @@
 }
 body{
     font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    height: 500;
+    height: 500vh;
 }
-
 .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family:  "Amatic SC", sans-serif;
     padding: 20px 0;
-    height: 93px;
+    height: 92px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05); 
+    z-index: 999;
 }
+
 .logo{
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     color: #37373F;
+    cursor: pointer;
 }
 .dot{
     color:#ce1212;
@@ -45,11 +53,11 @@ body{
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -7px;
   width: 0%;
-  height: 2px;
+  height: 1.5px;
   background-color: #ce1212; 
-  transition:  0.3s ease;
+  transition:  0.3s ease-out;
 }
 
 .nav-links a:hover {
@@ -76,5 +84,199 @@ body{
     color: white;
     font-weight: 400;
     line-height: 1.5;
+    transition: .5s ease;
+}
+.navBtn button:hover{
+    background-color: #e23232;
+    cursor: pointer;
 }
 
+.home{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    padding: 60px 0;
+    align-items: center;
+    margin-top: 92px;
+    justify-content: space-between;
+    padding-inline: 7rem;
+}
+
+.homeRightSide img{
+    width: 520px;
+    height: 520px;
+    animation: MoveUpDown 2s ease-in-out infinite alternate;
+}
+
+
+.homeLeftSide h1{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76.8px;
+    color: #37373F;
+    width: 30rem;
+}
+.homeLeftSide p{
+    width: 35rem;
+    font-size: 20px;
+    color: #727477;
+}
+.homeLeftButtons{
+    display: flex;
+    gap: 20px;
+}
+.FirstBtn{
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ce1212;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: .5s ease;
+}
+
+.booking:hover{
+    background-color: #e23232;
+}
+.secondBtn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.secondBtn:hover .watch{
+    color: #ce1212;
+}
+
+.secondBtn .PlayIcon{
+    font-size: 32px;
+    color: #ce1212;
+    text-align: center;
+
+}
+.secondBtn .watch{
+    font-size: 16px;
+    text-align: center;
+    transition: .3s;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes MoveUpDown {
+    0% {
+        transform: translateY(0px);
+    }
+    
+    100% {
+        transform: translateY(-20px);
+    }
+}
