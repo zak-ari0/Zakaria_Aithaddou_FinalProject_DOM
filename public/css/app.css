@@ -346,6 +346,28 @@ ul li i {
 .whycards:hover .whyIcon svg{
     color: white;
 }
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(../images/stats-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+.state{
+    text-align: center;
+}
+.state h1{
+    color: white;
+    font-size: 48px;
+}
+.state h4{
+    color: #b0b3b8;
+}
 
 
 
