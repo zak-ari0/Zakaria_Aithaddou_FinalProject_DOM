@@ -5,7 +5,7 @@
 }
 body{
     font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    height: 500vh;
+    height: 1000vh;
 }
 .navbar{
     display: flex;
@@ -367,6 +367,87 @@ ul li i {
 }
 .state h4{
     color: #b0b3b8;
+}
+.Menu{
+    margin-top: 4rem;
+}
+.MenuTitle{
+    margin-bottom: 5rem;
+}
+.MenuChoises{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MenuChoises ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.MenuChoises ul li{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: #37373F;
+    padding-bottom: 10px;
+    border-bottom: solid rgb(209, 204, 204) 2px;
+    cursor: pointer;
+    transition: .2s;
+}
+.MenuChoises ul li:hover{
+    border-bottom: #ce1212 solid 2px;
+}
+.MenuType{
+    margin-top: 2rem;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.MenuType h1{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #ce1212;
+
+}
+.MenuType h3{
+    font-weight: 400;
+    font-size: 15px;
+    color: #434349;
+}
+.platImg{
+    width: 300px;
+}
+.plat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MenuPlats{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    margin-inline: 5rem;
+    margin-top: 3rem;
+}
+.plat h1{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: #37373F;
+}
+.plat p{
+    font-size: 17px;
+    color: #858591;
+    font-weight: 400;
+    padding-block: 5px;
+}
+.plat h2{
+    color: #ce1212;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
 }
 
 
