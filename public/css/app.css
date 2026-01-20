@@ -261,6 +261,92 @@ ul li i {
     font-size: 20px;
     color: #ce1212;
 }
+.whyUs{
+    display: flex;
+    background-color: #F2F2F2;
+    padding: 3.8rem 7rem;
+    gap: 1.5rem;
+}
+.WhyChooseYummy{
+    width: 27rem;
+    height: 22rem;
+    background-color: #ce1212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: start;
+    padding: 30px 35px;
+}
+.WhyChooseYummy h1{
+    font-size: 34px;
+    line-height: 40.8px;
+    font-weight: 700;
+}
+.WhyChooseYummy button{
+    padding: 8px 35px;
+    border: none;
+    border-radius: 50px;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #ffffff2d;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+.WhyChooseYummy button:hover{
+    background-color: white;
+    color: #ce1212;
+}
+.whycards{
+    width: 20rem;
+    background-color: #fff;
+    text-align: center;
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+        border: .5px solid #bebec256;
+
+}
+.whycards h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #37373F;
+    width: 80%;
+}
+.whycards p {
+    color: #56565e;
+    width: 80%;
+}
+.whyIcon{
+    background-color:#fad6d65c;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-out;
+}
+
+.whyIcon svg{
+    width: 32px;
+    color: #ce1212;
+}
+
+.whycards:hover .whyIcon{
+    background-color: #ce1212;
+}
+.whycards:hover .whyIcon svg{
+    color: white;
+}
+
 
 
 
