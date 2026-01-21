@@ -29,7 +29,7 @@ body{
     color: #37373F;
     cursor: pointer;
 }
-.dot{
+.point{
     color:#ce1212;
     font-size: 25px;
 }
@@ -38,7 +38,7 @@ body{
     justify-content: space-between;
     gap: 2rem;
     font-family: "Inter", sans-serif;
-}
+} 
 .nav-links a{
     position: relative;
   text-decoration: none;
@@ -369,7 +369,8 @@ ul li i {
     color: #b0b3b8;
 }
 .Menu{
-    margin-top: 4rem;
+    margin-block: 5rem;
+
 }
 .MenuTitle{
     margin-bottom: 5rem;
@@ -449,6 +450,84 @@ ul li i {
     font-weight: 700;
     line-height: 36px;
 }
+.comments{
+    text-align: center;
+    padding: 60px 20px;
+    background: #e7e7e7;
+    height: 75vh;
+}
+
+.commentsTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CommentSlides{
+  overflow: hidden;
+  max-width: 60%;
+  margin: 40px auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+.slide {
+    display: flex;
+    justify-content: space-between;
+  min-width: 100%;
+  padding: 30px;
+ 
+}
+.carousel1Content{
+    border-left: solid 3px #ce1212;
+    padding-left: 3rem;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.carousel1Img img{
+width: 200px;
+border-radius: 50%;
+}
+
+.slide p {
+  font-style: italic;
+  color: #555;
+}
+
+.slide h3 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.slide span {
+  color: #999;
+  font-size: 14px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #ce1212;
+}
+
+
 
 
 
