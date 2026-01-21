@@ -592,6 +592,60 @@ border-radius: 50%;
 }
 
 
+.chefs {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+
+
+.chefsCardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; 
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.chef-card {
+  background: #fff;
+  width: 400px; 
+  height: 80%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  padding-bottom: 2rem;
+}
+
+.chef-card img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.chef-info {
+  padding: 1rem;
+}
+
+.chef-info h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.chef-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.chef-card:hover {
+  scale: 1.1;
+  
+}
+
 
 
 

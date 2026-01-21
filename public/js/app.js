@@ -37,11 +37,11 @@ const Slides = document.querySelectorAll(".event-slide");
 const Dots = document.querySelectorAll(".Dot");
 const track = document.querySelector(".eventsTrack");
 
-let current = 0; // index of first visible slide
-const visible = 3; // number of slides visible
+let current = 0; 
+const visible = 3; 
 
 function update() {
-  const slideWidth = Slides[0].offsetWidth + 20; // width + gap
+  const slideWidth = Slides[0].offsetWidth + 20; 
   track.style.transform = `translateX(-${current * slideWidth}px)`;
 
   Dots.forEach(d => d.classList.remove("Active"));
