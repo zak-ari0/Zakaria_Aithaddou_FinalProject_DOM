@@ -311,7 +311,7 @@ ul li i {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-        border: .5px solid #bebec256;
+    border: .5px solid #bebec256;
 
 }
 .whycards h3{
@@ -489,6 +489,9 @@ ul li i {
     flex-direction: column;
     justify-content: space-around;
 }
+.carousel1Content span i{
+    color: rgb(237, 201, 0);
+}
 .carousel1Img img{
 width: 200px;
 border-radius: 50%;
@@ -510,6 +513,7 @@ border-radius: 50%;
 }
 
 .dots {
+    margin-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 7px;
@@ -526,6 +530,67 @@ border-radius: 50%;
 .dot.active {
   background: #ce1212;
 }
+
+.events {
+  overflow: hidden;
+  height: 80vh;
+  width: 100%;
+  
+}
+
+.eventsCarousel {
+    width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.eventsTrack {
+    display: flex;
+    gap: 1px;
+    transition: transform 0.6s ease;
+}
+
+.event-slide {
+  flex: 0 0 33.333%;
+  position: relative;
+  transition: 0.5s;
+  height: 400px;
+}
+
+
+.event-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    filter: brightness(60%);
+}
+
+.eventContent {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  color: white;
+  z-index: 2;
+}
+.Dots {
+    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.Dot {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.Dot.Active {
+  background: #ce1212;
+}
+
 
 
 

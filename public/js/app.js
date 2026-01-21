@@ -1,6 +1,6 @@
-const slidesContainer = document.querySelector(".slides");
-const slides = document.querySelectorAll(".slide");
-const dots = document.querySelectorAll(".dot");
+let slidesContainer = document.querySelector(".slides");
+let slides = document.querySelectorAll(".slide");
+let dots = document.querySelectorAll(".dot");
 
 let index = 0;
 
@@ -31,3 +31,42 @@ setInterval(() => {
   index = (index + 1) % slides.length;
   MoveSlide(index);
 }, 4000);
+
+
+const Slides = document.querySelectorAll(".event-slide");
+const Dots = document.querySelectorAll(".Dot");
+const track = document.querySelector(".eventsTrack");
+
+let current = 0; // index of first visible slide
+const visible = 3; // number of slides visible
+
+function update() {
+  const slideWidth = Slides[0].offsetWidth + 20; // width + gap
+  track.style.transform = `translateX(-${current * slideWidth}px)`;
+
+  Dots.forEach(d => d.classList.remove("Active"));
+  if (Dots[current]){
+    Dots[current].classList.add("Active");
+  } 
+}
+
+//* indicators click
+Dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    current = i;
+    if (current > Slides.length - visible) current = Slides.length - visible;
+    update();
+  });
+});
+
+//* Auto-slide
+setInterval(() => {
+  current++;
+  if (current > Slides.length - visible) current = 0;
+  update();
+}, 4000);
+
+update();
+
+
+
