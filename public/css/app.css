@@ -712,11 +712,11 @@ textarea:focus {
   border-radius: 3px;
   color: white;
   background-color: #ce1212;
-  transition: .4s;
+  transition: 0.4s;
   cursor: pointer;
 }
-.submit-button button:hover{
-    background-color:#ce1212b7;
+.submit-button button:hover {
+  background-color: #ce1212b7;
 }
 .message {
   width: 51rem;
@@ -756,20 +756,230 @@ textarea {
 .bookTableTop h2 span {
   color: #ce1212;
 }
+.gallery {
+  height: 80vh;
+  background-color: #f9f9f9;
+  margin-top: 4rem;
+}
+.galleryTitle {
+  padding-top: 3rem;
+}
+.contact {
+  margin-top: 3rem;
+}
+.map {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 7rem;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.contactInfos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding-inline: 7rem;
+  margin-top: 3rem;
+}
+.infoCard {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  height: 7rem;
+  display: flex;
+  align-items: center;
+}
+.infoIcon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #ce1212;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+.infoIcon svg {
+  color: white;
+}
+.infoConten h1 {
+  font-size: 20px;
+  color: #555;
+}
+.contactMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactInputs {
+  height: 70vh;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding-inline: 7rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
 
+.Name-Email input {
+  padding-inline: 10px;
+  border: 1px solid lightgrey;
+  outline: none;
+  transition: 0.4s;
+}
 
+.Name-Email input:focus {
+  border-color: #ce1212;
+}
+.Name-Email {
+  width: 100%;
+  height: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.7rem;
+}
 
+.Sub input {
+  width: 100%;
+  height: 3rem;
+  padding-inline: 10px;
+  border: 1px solid lightgrey;
+  outline: none;
+  transition: 0.4s;
+}
 
+.Sub input:focus {
+  border-color: #ce1212;
+}
+.Sub {
+  width: 100%;
+  height: 3rem;
+}
+.Mess textarea {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 1px solid lightgray;
+  outline: none;
+  transition: 0.4s;
+}
 
+.Mess textarea:focus {
+  border-color: #ce1212;
+}
+.Mess {
+  width: 100%;
+  height: 10rem;
+}
 
+.ConButt button {
+  padding: 0.8rem 2rem;
+  background-color: #ce1212;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+}
 
+.ConButt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+footer {
+  height: 35vh;
+  background-color: #0b0914;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.footerbottom {
+  padding-top: 20px;
+  text-align: center;
+}
 
+.footerLogo svg {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ce1212;
+}
+.footerInfo h6 {
+  font-weight: 600;
+  color: white;
+}
+.footerInfo p {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
 
+.footerBox {
+  width: 15rem;
+  display: flex;
+  gap: 20px;
+}
+.footertop {
+  padding-top: 30px;
+  border-bottom: 1px lightgray solid;
+  padding-bottom: 2rem;
+  padding-right: 10rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.footerSocial h6 {
+  font-weight: 600;
+  color: white;
+}
+.icons div i {
+  color: #8f8b86;
+  font-size: 17px;
+  transition: 0.3s;
+}
+.icons div i:hover {
+  color: #ce1212;
+}
 
+.icons div {
+  border: solid #8f8b86 1px;
+  border-radius: 50%;
+  padding: 7px 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.icons div:hover {
+  border-color: #ce1212;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
 
+.footerbottom p a {
+  color: #ce1212;
+  text-decoration: none;
+}
+
+.footerbottom p {
+  color: white;
+  font-size: 14px;
+  line-height: 10px;
+}
 
 
 
