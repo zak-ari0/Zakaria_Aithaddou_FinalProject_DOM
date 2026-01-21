@@ -23,20 +23,20 @@
     <header class="navbar">
       <div class="logo">Yummy<span class="point">.</span></div>
       <nav class="nav-links">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Menu</a>
-        <a href="">Events</a>
-        <a href="">Chefs</a>
-        <a href="">Gallery</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#Menu">Menu</a>
+        <a href="#events">Events</a>
+        <a href="#chefs">Chefs</a>
+        <a href="#gallery">Gallery</a>
         <a href="">Dropdown<i class="fa-solid fa-chevron-down"></i></a>
-        <a href="">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="navBtn">
-        <button>Book a Table</button>
+        <button id="bookBtn" class="book-btn">Book a Table</button>
       </div>
     </header>
-    <section class="home">
+    <section class="home" id="home">
       <div class="homeLeftSide">
         <h1>Enjoy Your Healthy Delicious Food</h1>
         <p>We are team of talented designers making websites with Bootstrap</p>
@@ -54,7 +54,7 @@
         <img src="public/images/hero-img.png" alt="" />
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="aboutTitle">
         <h3>ABOUT US</h3>
         <h1>Learn More <span>About Us</span></h1>
@@ -104,7 +104,7 @@
         </div>
       </div>
     </section>
-    <section class="whyUs">
+    <section class="whyUs" id="whyUs">
       <div class="WhyChooseYummy">
         <h1>Why Choose Yummy</h1>
         <p>
@@ -179,7 +179,7 @@
         </p>
       </div>
     </section>
-    <section class="stats">
+    <section class="stats" id="stats">
       <div class="state">
         <h1>232</h1>
         <h4>Clients</h4>
@@ -197,7 +197,7 @@
         <h4>Workers</h4>
       </div>
     </section>
-    <section class="Menu">
+    <section class="Menu" id="Menu">
       <div class="aboutTitle MenuTitle">
         <h3>OUR MENU</h3>
         <h1>Check Our <span>Yummy Menu</span></h1>
@@ -277,7 +277,7 @@
         </div>
       </div>
     </section>
-    <section class="comments">
+    <section class="comments" id="comments">
       <div class="commentsTitle aboutTitle">
         <h3>TESTIMONIALS</h3>
         <h1>What Are They <span> Saying About Us</span></h1>
@@ -355,7 +355,7 @@
         </div>
       </div>
     </section>
-    <section class="events">
+    <section class="events" id="events">
       <div class="eventsCarousel">
         <div class="eventsTrack">
           <div class="event-slide">
@@ -399,7 +399,7 @@
         <span class="Dot"></span>
       </div>
     </section>
-    <section class="chefs">
+    <section class="chefs" id="chefs">
       <div class="aboutTitle chefsTitle">
         <h3>OUR MENU</h3>
         <h1>Our <span>Proffesional Chefs</span></h1>
@@ -445,7 +445,7 @@
         </div>
       </div>
     </section>
-    <section class="bookTable">
+    <section class="bookTable" id="bookTable">
       <div class="aboutTitle bookTable">
         <h3>BOOK A TABLE</h3>
         <h1>Book Your <span>Stay With Us</span></h1>
@@ -484,13 +484,13 @@
         </div>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="aboutTitle galleryTitle">
         <h3>GALLERY</h3>
         <h1>Check <span>Our Gallery</span></h1>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="aboutTitle contactTitle">
         <h3>CONTACT</h3>
         <h1>Need Help? <span>Contact Us</span></h1>
@@ -699,6 +699,38 @@
         <p>Designed by <a href="">BootstrapMade</a></p>
       </div>
     </footer>
+
+
+
+
+
+<div class="modal" id="bookingModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h2>Book a Table</h2>
+
+    <form id="bookingForm">
+      <input type="text" id="fullName" placeholder="Full Name" required>
+
+      <select id="meal" required>
+        <option value="">Select Meal</option>
+        <option>Breakfast</option>
+        <option>Lunch</option>
+        <option>Dinner</option>
+      </select>
+
+      <input type="time" id="startTime" required>
+      <input type="time" id="endTime" required>
+
+      <input type="number" id="people" placeholder="Number of People" min="1" required>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+
+    <p id="errorMsg"></p>
+  </div>
+</div>
 
 
 
