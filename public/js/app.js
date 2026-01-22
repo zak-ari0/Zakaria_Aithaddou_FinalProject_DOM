@@ -106,6 +106,7 @@ form.addEventListener("submit", (e) => {
     errorMsg.textContent = " This time is already booked!";
     return;
   }
+    errorMsg.textContent = ''
 
   bookings.push({ name, mealType, start, end, persons });
 
@@ -113,6 +114,8 @@ form.addEventListener("submit", (e) => {
 
   modal.style.display = "none";
   form.reset();
+  console.log(bookings);
+  
 });
 
 
